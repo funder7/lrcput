@@ -12,9 +12,26 @@ The `lrcput.py` script allows you to embed LRC (Lyrics) files into both FLAC, M4
   - eyed3
   - tqdm (for progress bar)
 
-## Install dependencies
+## Install pip & dependencies
 
-You can install the required libraries with the following command:
+First, you need pip, usually not installed by default even when python is already available in the system.
+
+1. On Ubuntu, install `pip` with:
+
+```sh
+sudo apt install pip --fix-missing
+```
+
+This will take care of installing it, plus the required dependencies, when they are missing.  
+
+2. Add python's bin local bin folder to the PATH, appending the following into your `.bashrc` or `.zshrc` (depending on which shell you're using).
+
+```sh
+echo 'export PATH="$PATH:$HOME/.local/bin"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+3. Now you can install the python libraries, required by this script. Use the following command:
 
 ```sh
 pip install -r requirements.txt
