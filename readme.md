@@ -12,6 +12,14 @@ The `lrcput.py` script allows you to embed LRC (Lyrics) files into both FLAC, M4
   - eyed3
   - tqdm (for progress bar)
 
+## Install dependencies
+
+You can install the required libraries with the following command:
+
+```sh
+pip install -r requirements.txt
+```
+
 ## Usage
 
 1. Place your audio files (FLAC or M4A or MP3) and their corresponding LRC files in the same directory.
